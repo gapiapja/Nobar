@@ -1,0 +1,27 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nobar Film + Voice Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Nobar Film</h1></header>
+  <div class="container">
+    <video id="videoPlayer" controls>
+      <source src="film.mp4" type="video/mp4">
+      Browser Anda tidak mendukung video HTML5.
+    </video>
+    <div class="chat-box">
+      <div class="chat-messages" id="chatMessages"></div>
+      <input type="text" id="chatInput" placeholder="Tulis pesan..." />
+      <button id="voiceBtn">🔊 Gabung Voice Chat</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.socket.io/4.6.1/socket.io.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
